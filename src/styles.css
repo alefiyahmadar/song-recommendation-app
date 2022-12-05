@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #fed7aa;
+  --secondary-color: #9a3412;
+  --third-color: #fdba74;
+}
+
+.App {
+  font-family: "Lora", serif;
+  font-family: "Mochiy Pop One", sans-serif;
+  text-align: left;
+}
+body {
+  background-color: #fed7aa;
+  padding-inline-start: 0px;
+  margin: auto;
+  max-width: 500px;
+  padding-top: 1rem;
+}
+
+.songBtn {
+  padding: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: #fdba74;
+  border-radius: 0.5rem;
+  border-color: #fb923c;
+  color: #9a3412;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.header {
+  color: var(--secondary-color);
+}
+.text {
+  color: #f97316;
+}
+.list {
+  list-style: none;
+  padding: 1rem;
+}
+.name {
+  padding-top: 0.5rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: larger;
+}
+.rating {
+  color: #f97316;
+  font-weight: bold;
+  font-size: small;
+}
+.list-item {
+  border: 1px solid #f97316;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
