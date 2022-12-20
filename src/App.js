@@ -14,7 +14,7 @@ var songGenre = {
     { name: "Ghost", rating: "4/5" }
   ],
   HipHop: [
-    { name: "Better Now", rating: "5/5" },
+    { name: "Better Nowe", rating: "5/5" },
     { name: "Starboy", rating: "4/5" },
     { name: "All The Star", rating: "4/5" }
   ]
