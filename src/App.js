@@ -4,19 +4,23 @@ import { useState } from "react";
 
 var songGenre = {
   Pop: [
-    { name: "Uptown Funk", rating: "5/5" },
-    { name: "24k magic", rating: "4/5" },
-    { name: "God Is Women", rating: "4/5" }
+    {
+      name: "Uptown Funk",
+      des: "By Mark Ranson feat Bruno Mars",
+      rating: "5/5"
+    },
+    { name: "24k magic", des: "By Bruno Mars", rating: "4/5" },
+    { name: "God Is Women", des: "By Ariana Grande", rating: "4/5" }
   ],
   Soul: [
-    { name: "I Like Me Better", rating: "5/5" },
-    { name: "Reserructing", rating: "5/5" },
-    { name: "Ghost", rating: "4/5" }
+    { name: "I Like Me Better", des: "By Lauv", rating: "5/5" },
+    { name: "Reserructing", des: "By Jess&Gabe", rating: "5/5" },
+    { name: "Sage", des: "By Ritviz", rating: "4/5" }
   ],
   HipHop: [
-    { name: "Better Nowe", rating: "5/5" },
-    { name: "Starboy", rating: "4/5" },
-    { name: "All The Star", rating: "4/5" }
+    { name: "Better Now", des: "By Post Malone", rating: "5/5" },
+    { name: "Starboy", des: "By Drake", rating: "4/5" },
+    { name: "All The Star", des: "By Kendrick Lamar feat Szn", rating: "4/5" }
   ]
 };
 
@@ -55,13 +59,15 @@ export default function App() {
 
       <div>
         <ul className="list">
-          {songGenre[meaning].map(function (song) 
-          { return (
-            <li className="list-item">
-              <div className="name">{song.name}</div>
-              <div className="rating">{song.rating}</div>
-            </li>
-          )})}
+          {songGenre[meaning].map(function (song) {
+            return (
+              <li className="list-item">
+                <div className="name">{song.name}</div>
+                <div className="des">{song.des}</div>
+                <div className="rating">{song.rating}</div>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

@@ -45,10 +45,15 @@ body {
   font-weight: bold;
   font-size: larger;
 }
+.des {
+  font-size: smaller;
+  color: var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
 .rating {
   color: #f97316;
   font-weight: bold;
-  font-size: small;
+  font-size: large;
 }
 .list-item {
   border: 1px solid #f97316;
